@@ -24,7 +24,7 @@ def scrape_table(root):
             # Print out the data we've gathered
             print record, '------------'
             # Finally, save the record to the datastore - 'Artist' is our unique key
-            scraperwiki.sqlite.save(["Artist"], record)
+            scraperwiki.sqlite.save(["Release date"], record)
         
 # # scrape_and_look_for_next_link function: calls the scrape_table
 # # function, then hunts for a 'next' link: if one is found, calls itself again
